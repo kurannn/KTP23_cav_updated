@@ -88,10 +88,10 @@ st.write(input_df_transposed)
 
 if st.button("Submit"):
     prediction = model.predict(input_features)
-    predicted_pgv = max(0, prediction[0])
+    predicted_cav = max(0, prediction[0])
 
     st.subheader("Result")
-    st.write(f"PGV = {predicted_pgv:,.5f} cm/s")
+    st.write(f"CAV = {predicted_cav:,.5f} cm/s")
 
 paper = """
 <strong>Thesis:</strong> Kuran, F. (2024), Prediction of strong ground motion parameters using machine learning techniques.
