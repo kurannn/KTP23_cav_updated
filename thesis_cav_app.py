@@ -50,7 +50,6 @@ def user_input_features():
     st.sidebar.markdown("<h1 style='text-align: center; font-size: 16px;'>Define estimator parameters</h1>", unsafe_allow_html=True)
     Mw = st.sidebar.slider("Mw", 3.5, 7.8, step=0.1)
     VS30 = st.sidebar.slider("Vs30", 131, 1862)
-    Dip = st.sidebar.slider("δ", 30, 90)
     Rjb = st.sidebar.slider("Rjb", 0, 200)
     SOF = st.sidebar.selectbox("SoF", ["Strike-slip", "Normal", "Reverse"])
 
